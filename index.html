@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ravi Chandra | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html" id="RC"><span class="logo-icon">RC</span></a>
+        <span class="logo-text">Ravi Chandra</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <button id="darkModeToggle" title="Toggle Dark Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburgerBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <span class="badge">Python Full Stack Developer Intern</span>
+        <h1>
+          Hi, I’m <span class="gradient-text">Ravi Chandra</span>
+          <span class="wave">👋</span>
+        </h1>
+        <h2>
+          I build responsive and interactive
+          <span class="gradient-text">web applications.</span>
+        </h2>
+        <p>
+          I’m a passionate developer currently learning Python Full Stack
+          Development. I love turning ideas into real-world projects.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="resume.pdf" class="btn btn-secondary" download
+            >Download Resume</a
+          >
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:yourmail@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="https://instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="profile.jpg" alt="Profile Image" class="profile-img" />
+          <div class="floating-card">
+            <i class="fas fa-rocket"></i>
+            <span>1+ Projects Completed</span>
+          </div>
+          <div class="glow-circles"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-left">
+        <img
+          src="dev-illustration.svg"
+          alt="Developer Illustration"
+          class="about-img"
+        />
+      </div>
+      <div class="about-right">
+        <h2>Get to know me!</h2>
+        <p>
+          I’m a B.Tech graduate and a Python Full Stack Developer Intern at YGR
+          Global IT Services. I’m skilled in HTML, CSS, JavaScript, DOM
+          Manipulation, and Python. I enjoy building clean, modern, and
+          user-friendly websites.
+        </p>
+        <ul class="about-info">
+          <li>
+            <i class="fas fa-user"></i> <span>Name:</span>Pathi Ravi Chandra
+          </li>
+          <li>
+            <i class="fas fa-graduation-cap"></i> <span>Degree:</span> B.Tech
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Location:</span> Hyderabad, India
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>Email:</span> ravicahndrapathi926@gmail.com
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2>My Technical Expertise</h2>
+      <div class="skills-cards">
+        <div class="skill-card frontend">
+          <h3><i class="fas fa-code"></i> Frontend</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>DOM Manipulation</li>
+          </ul>
+        </div>
+        <div class="skill-card backend">
+          <h3><i class="fas fa-database"></i> Backend</h3>
+          <ul>
+            <li>Python (Basics)</li>
+          </ul>
+        </div>
+        <div class="skill-card tools">
+          <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+          <ul>
+            <li>VS Code</li>
+            <li>Git & GitHub</li>
+            <li>Canva</li>
+            <li>GitHub Pages</li>
+          </ul>
+        </div>
+        <div class="skill-card other">
+          <h3><i class="fas fa-lightbulb"></i> Other Skills</h3>
+          <ul>
+            <li>Responsive Design</li>
+            <li>Problem Solving</li>
+            <li>UI/UX Basics</li>
+            <li>Team Collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section class="internship" id="internship">
+      <div class="internship-card glass">
+        <img
+          src="ygr-logo.png"
+          alt="YGR Global IT Services"
+          class="internship-logo"
+        />
+        <div>
+          <h3>Python Full Stack Developer Intern</h3>
+          <p class="company">YGR Global IT Services</p>
+          <p class="duration">
+            <i class="fas fa-calendar"></i> Feb 09, 2026 – Present &nbsp;
+            <i class="fas fa-map-marker-alt"></i> Hyderabad, India
+          </p>
+          <ul class="internship-tasks">
+            <li>
+              <i class="fas fa-check-circle"></i> Learning and working on
+              front-end technologies like HTML, CSS, JavaScript.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Practiced DOM manipulation and
+              interactive UI development.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Working on real-time projects
+              and UI components.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Understanding full stack
+              development and project workflow.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2>My Recent Projects</h2>
+      <div class="projects-cards">
+        <!-- Project Card Example -->
+        <div class="project-card glass">
+          <img src="calculator.png" alt="Calculator App" />
+          <div class="project-info">
+            <h3>Calculator App</h3>
+            <p>
+              A responsive calculator built using HTML, CSS, and JavaScript.
+            </p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/ravichandra-5859/calculator"
+                class="btn-icon"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://ravichandra-5859.github.io/calculator/"
+                class="btn-icon"
+                title="Live Preview"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Admin Dashboard -->
+        <div class="project-card glass">
+          <img src="dashboard.png" alt="Admin Dashboard" />
+          <div class="project-info">
+            <h3>Admin Dashboard</h3>
+            <p>A modern admin dashboard UI design.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-icon" title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" class="btn-icon" title="Live Preview"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Website -->
+        <div class="project-card glass">
+          <img src="portfolio.png" alt="Portfolio Website" />
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>My personal portfolio website.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-icon" title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" class="btn-icon" title="Live Preview"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Banner -->
+    <section class="resume-banner" id="resume">
+      <div class="resume-content">
+        <i class="fas fa-file-alt"></i>
+        <div>
+          <h2>Download My Resume</h2>
+          <p>Get a detailed overview of my skills, experience and projects.</p>
+        </div>
+        <a href="resume.pdf" class="btn btn-primary" download
+          >Download Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Let’s Connect!</h2>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span>ravicahndrapathi926@gmail.com</span>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <span>+91 9550808836</span>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Hyderabad, India</span>
+        </div>
+        <div class="contact-card">
+          <a href="https://github.com/ravichandra-5859" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <div class="contact-card">
+          <a
+            href="https://www.linkedin.com/in/pathi-ravi-chandra-82562a25a/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 Ravi Chandra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
