@@ -623,27 +623,82 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 1100px) {
-  .hero, .about {
+
+/* Global image fix for responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Large Desktop (1440px) */
+@media (max-width: 1440px) {
+  .hero, .about, .skills, .internship, .projects, .resume-banner, .contact {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+}
+
+/* Laptop (1200px) */
+@media (max-width: 1200px) {
+  .hero, .about, .skills, .internship, .projects, .resume-banner, .contact {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .hero-left h1 {
+    font-size: 2.4rem;
+  }
+  .profile-img, .about-img {
+    width: 200px;
+    height: 200px;
+  }
+  .internship-card {
+    padding: 1.5rem 2rem;
+  }
+}
+
+/* Tablet Landscape (992px) */
+@media (max-width: 992px) {
+  .hero {
+    gap: 2vw;
+  }
+  .hero-left h1 {
+    font-size: 2.2rem;
+  }
+  .hero-left h2 {
+    font-size: 1.2rem;
+  }
+  .profile-img, .about-img {
+    width: 180px;
+    height: 180px;
+  }
+  .internship-card {
     flex-direction: column;
-    gap: 2.5vw;
-    padding: 7vw 4vw;
+    align-items: center;
     text-align: center;
   }
-  .hero-right, .about-left {
-    justify-content: center;
+  .internship-tasks li {
+    text-align: left;
   }
   .resume-content {
     flex-direction: column;
-    gap: 1.2rem;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .resume-content .btn {
+    margin-left: 0;
+  }
+  .skills-cards, .projects-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 800px) {
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
   .nav-links {
     display: none;
     position: absolute;
     top: 60px;
-    right: 2vw;
+    right: 5vw;
     background: var(--glass);
     flex-direction: column;
     gap: 1.2rem;
@@ -651,6 +706,9 @@ footer {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     z-index: 200;
+    min-width: 200px;
+    text-align: center;
+    backdrop-filter: blur(16px);
   }
   .nav-links.open {
     display: flex;
@@ -658,22 +716,130 @@ footer {
   .hamburger {
     display: block;
   }
+  .hero {
+    min-height: auto;
+  }
+  .hero, .about {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    gap: 4vw;
+  }
+  .hero-left, .about-right {
+    align-items: center;
+  }
+  .hero-left p {
+    max-width: 600px;
+  }
+  .about-info {
+    justify-content: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .skills-cards, .projects-cards {
+    gap: 1.5rem;
+  }
+}
+
+/* Large Mobile (576px) */
+@media (max-width: 576px) {
   .hero, .about, .skills, .internship, .projects, .resume-banner, .contact {
-    padding: 7vw 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .hero-left h1 {
+    font-size: 1.8rem;
+  }
+  .hero-left h2 {
+    font-size: 1.1rem;
+  }
+  .hero-left p {
+    font-size: 0.95rem;
+  }
+  .profile-img, .about-img {
+    width: 150px;
+    height: 150px;
   }
   .skills-cards, .projects-cards, .contact-cards {
     grid-template-columns: 1fr;
     flex-direction: column;
-    gap: 1.5rem;
+  }
+  .contact-cards {
+    gap: 1.2rem;
+  }
+  .resume-content h2 {
+    font-size: 1.5rem;
+  }
+  .resume-content p {
+    font-size: 0.95rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .internship-card {
+    padding: 1.5rem;
+  }
+  .internship-tasks li {
+    font-size: 0.9rem;
+    align-items: flex-start;
+  }
+  .internship-tasks i {
+    margin-top: 0.3rem;
+  }
+  .resume-banner {
+    border-radius: 0;
   }
 }
-@media (max-width: 600px) {
-  .profile-img, .about-img {
-    width: 140px;
-    height: 140px;
+
+/* Small Mobile (400px) */
+@media (max-width: 400px) {
+  .hero, .about, .skills, .internship, .projects, .resume-banner, .contact {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
-  .resume-content .btn {
-    margin-left: 0;
-    margin-top: 1rem;
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-links {
+    right: 1rem;
+    left: 1rem;
+    min-width: auto;
+  }
+  .hero-left h1 {
+    font-size: 1.6rem;
+  }
+  .profile-img, .about-img {
+    width: 130px;
+    height: 130px;
+  }
+  .about-info li {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+  }
+  .contact-card {
+    padding: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: flex-start;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .resume-content i {
+    font-size: 2rem;
+    padding: 0.8rem;
   }
 }
