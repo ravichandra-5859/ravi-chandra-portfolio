@@ -555,17 +555,36 @@ body {
   border-radius: 50%;
   padding: 0.5rem;
   font-size: 1.1rem;
+  margin-right: 0.2rem;
   transition:
     background var(--transition),
     color var(--transition),
     transform var(--transition);
   cursor: pointer;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn-icon:hover {
   background: var(--primary);
   color: #fff;
-  transform: scale(1.15);
+  transform: scale(1.15) rotate(-3deg);
+}
+
+/* Vercel SVG icon style for alignment and smooth transition */
+.vercel-link .vercel-svg {
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-block;
+  vertical-align: middle;
+  transition:
+    color var(--transition),
+    transform var(--transition);
+}
+.vercel-link:hover .vercel-svg {
+  color: #fff;
+  transform: scale(1.15) rotate(-3deg);
 }
 
 /* Resume Banner */

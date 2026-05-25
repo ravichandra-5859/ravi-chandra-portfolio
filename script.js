@@ -19,15 +19,6 @@ document.getElementById("hamburgerBtn").addEventListener("click", () => {
   document.querySelector(".nav-links").classList.toggle("open");
 });
 
-// Dark mode toggle
-const darkModeBtn = document.getElementById("darkModeToggle");
-darkModeBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  darkModeBtn.innerHTML = document.body.classList.contains("dark-mode")
-    ? '<i class="fas fa-sun"></i>'
-    : '<i class="fas fa-moon"></i>';
-});
-
 // Intersection Observer for fade-in animations
 const observer = new IntersectionObserver(
   (entries, observer) => {
