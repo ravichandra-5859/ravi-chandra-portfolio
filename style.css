@@ -655,11 +655,35 @@ body {
 }
 .contact-card a {
   color: var(--primary);
-  font-size: 1.3rem;
-  transition: color var(--transition);
+  font-size: 1.1rem;
+  transition:
+    color var(--transition),
+    background var(--transition),
+    box-shadow var(--transition);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
 }
 .contact-card a:hover {
   color: var(--secondary);
+  background: var(--glass);
+  box-shadow: 0 0 8px var(--primary);
+  text-decoration: underline;
+  text-decoration: none;
+}
+/* Email/Phone link hover for about, footer, social */
+.contact-email,
+.contact-phone {
+  color: var(--primary);
+  transition: color var(--transition);
+  cursor: pointer;
+  text-decoration: none;
+}
+.contact-email:hover,
+.contact-phone:hover {
+  color: var(--secondary);
+  text-decoration: none;
 }
 
 /* Footer */

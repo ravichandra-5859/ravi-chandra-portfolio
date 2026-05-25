@@ -1,3 +1,23 @@
+// Phone click: open dialer on mobile, WhatsApp on desktop
+function isMobileDevice() {
+  return /android|iphone|ipad|ipod|opera mini|iemobile|mobile/i.test(
+    navigator.userAgent,
+  );
+}
+
+function handlePhoneClick(e) {
+  e.preventDefault();
+  const phone = "+919550808836";
+  if (isMobileDevice()) {
+    window.location.href = `tel:${phone}`;
+  } else {
+    window.open(`https://wa.me/${phone.replace("+", "")}`, "_blank");
+  }
+}
+
+document.querySelectorAll(".contact-phone").forEach((el) => {
+  el.addEventListener("click", handlePhoneClick);
+});
 // Smooth scroll for nav links
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", function (e) {
